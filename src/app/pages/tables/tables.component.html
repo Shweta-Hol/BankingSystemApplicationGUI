@@ -1,0 +1,48 @@
+
+<div class=" content">
+
+  <div class=" row">
+    <div class=" col-md-12">
+      <div class=" card">
+        <div class=" card-header">
+          <h4 class=" card-title">CUSTOMER DETAILS</h4>
+        </div>
+      </div>
+    </div>
+    <div class=" col-md-12">
+      <div class=" card card-plain">
+        <div class=" card-body">
+            <table mat-table class=" table tablesorter" id="">
+              <thead class=" text-primary">
+                <tr style="background-color:#fd5d93;border-color:#fd5d93" >
+                  <th>Customer Id</th>
+                  <th>Name</th>
+                  <th>E-mail</th>
+                  <th>Contact</th>
+                  <th>Balance</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+
+              <tr *ngFor="let customer of customerList" (click)="selectCustomer(customer)"
+                  [ngClass]="{'TablesComponent': customer === currentCustomer}" >
+                  <td>{{customer.id}}</td>
+                  <td>{{customer.name}}</td>
+                <td>{{customer.email}}</td>
+                <td>{{customer.contact}}</td>
+                <td>{{customer.balance}}</td>
+
+                <td>  <button style="background-color:#fd5d93;border-color:#fd5d93;color:white">  VIEW </button>  </td>
+              </tr>
+              </tbody>
+
+            </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

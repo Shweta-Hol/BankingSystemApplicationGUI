@@ -1,0 +1,87 @@
+ // Core
+
+@import "bankingsystem/custom/functions";
+@import "bankingsystem/bootstrap/functions";
+
+@import "bankingsystem/custom/variables";
+@import "bankingsystem/bootstrap/variables";
+
+@import "bankingsystem/custom/mixins";
+@import "bankingsystem/bootstrap/mixins";
+
+ // Bootstrap components
+
+@import "bankingsystem/bootstrap/root";
+@import "bankingsystem/bootstrap/reboot";
+@import "bankingsystem/bootstrap/type";
+@import "bankingsystem/bootstrap/images";
+@import "bankingsystem/bootstrap/code";
+@import "bankingsystem/bootstrap/grid";
+@import "bankingsystem/bootstrap/tables";
+@import "bankingsystem/bootstrap/forms";
+@import "bankingsystem/bootstrap/buttons";
+@import "bankingsystem/bootstrap/transitions";
+@import "bankingsystem/bootstrap/dropdown";
+@import "bankingsystem/bootstrap/button-group";
+@import "bankingsystem/bootstrap/input-group";
+@import "bankingsystem/bootstrap/custom-forms";
+@import "bankingsystem/bootstrap/nav";
+@import "bankingsystem/bootstrap/navbar";
+@import "bankingsystem/bootstrap/card";
+@import "bankingsystem/bootstrap/breadcrumb";
+@import "bankingsystem/bootstrap/pagination";
+@import "bankingsystem/bootstrap/badge";
+@import "bankingsystem/bootstrap/jumbotron";
+@import "bankingsystem/bootstrap/alert";
+@import "bankingsystem/bootstrap/progress";
+@import "bankingsystem/bootstrap/media";
+@import "bankingsystem/bootstrap/list-group";
+@import "bankingsystem/bootstrap/close";
+@import "bankingsystem/bootstrap/modal";
+@import "bankingsystem/bootstrap/tooltip";
+@import "bankingsystem/bootstrap/popover";
+@import "bankingsystem/bootstrap/carousel";
+@import "bankingsystem/bootstrap/utilities";
+@import "bankingsystem/bootstrap/print";
+
+ // Custom components
+
+ @import "bankingsystem/custom/alerts.scss";
+ @import "bankingsystem/custom/buttons.scss";
+ @import "bankingsystem/custom/dropdown.scss";
+ @import "bankingsystem/custom/footer.scss";
+ @import "bankingsystem/custom/forms.scss";
+ @import "bankingsystem/custom/images.scss";
+ @import "bankingsystem/custom/modal.scss";
+ @import "bankingsystem/custom/navbar.scss";
+ @import "bankingsystem/custom/type.scss";
+ @import "bankingsystem/custom/tables";
+ @import "bankingsystem/custom/checkboxes-radio";
+ @import "bankingsystem/custom/fixed-plugin";
+ @import "bankingsystem/custom/sidebar-and-main-panel.scss";
+ @import "bankingsystem/custom/misc.scss";
+ @import "bankingsystem/custom/rtl.scss";
+ @import "bankingsystem/custom/input-group.scss";
+
+
+ // Vendor / Plugins
+
+@import "bankingsystem/custom/vendor/plugin-perfect-scrollbar.scss";
+@import "bankingsystem/custom/vendor/plugin-animate-bootstrap-notify.scss";
+
+// light mode
+
+@import "bankingsystem/custom/white-content.scss";
+
+// Cards
+
+@import 'bankingsystem/custom/card';
+@import "bankingsystem/custom/cards/card-chart";
+@import "bankingsystem/custom/cards/card-map";
+@import "bankingsystem/custom/cards/card-user";
+@import "bankingsystem/custom/cards/card-task";
+@import "bankingsystem/custom/cards/card-plain";
+
+// Angular Differences
+
+@import "bankingsystem/angular-differences/angular-differences";

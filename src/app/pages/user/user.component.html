@@ -1,0 +1,76 @@
+
+<div class=" content">
+  <div class=" row">
+    <div class=" col-md-12">
+      <div class=" card">
+        <div class=" card-header">
+          <h4 class=" card-title">CUSTOMER INFORMATION</h4>
+        </div>
+      </div>
+    </div>
+    <div class=" col-md-12">
+      <div class=" card card-plain">
+        <div class=" card-body">
+          <div class=" row">
+            <h4 style="margin-left: 20px;">Customer Id </h4>
+            <h4 style="margin-left: 20px;">: &nbsp;  {{user.id}} </h4>
+            <h4 style="margin-left: 250px;">Name   </h4>
+            <h4 style="margin-left: 35px;">:&nbsp;   {{user.name}} </h4>
+            <button class="nav-item nav-link-edit" [routerLink]="['/tables']" style="background-color:#fd5d93;border-color:#fd5d93;color:white;margin-left: 160px;width:180px"> View All Customers </button >
+          </div>
+          <div class=" row">
+            <h4 style="margin-left: 20px;">E-mail </h4>
+            <h4 style="margin-left: 70px;">:&nbsp;  {{user.email}}  </h4>
+            <h4 style="margin-left: 85px;">Contact</h4>
+            <h4 style="margin-left: 20px;">:&nbsp;   {{user.contact}}  </h4>
+          </div>
+          <div class=" row">
+            <h4 style="margin-left: 20px;">Balance </h4>
+            <h4 style="margin-left: 59px;">:&nbsp;   {{user.balance}} </h4>
+            <button class="nav-item nav-link-edit" [routerLink]="['/transaction']" style="background-color:#fd5d93;border-color:#fd5d93;color:white;margin-left: 550px;width:180px"> Transfer Money </button >
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class=" row">
+    <div class=" col-md-12">
+      <div class=" card">
+        <div class=" card-header">
+          <h4 class=" card-title">TRANSACTION HISTORY</h4>
+        </div>
+      </div>
+    </div>
+    <div class=" col-md-12">
+      <div class=" card card-plain">
+        <div class=" card-body">
+          <table mat-table class=" table tablesorter" id="transactionHistory">
+            <thead class=" text-primary">
+            <tr>
+              <th>Transaction Id</th>
+              <th>Sender Name</th>
+              <th>Receiver Name</th>
+              <th>Transaction Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr *ngFor="let transaction of transactionHistoryDetails"
+            >
+              <td>{{transaction.transactionId}}</td>
+              <td>{{transaction.sender}}</td>
+              <td>{{transaction.receiver}}</td>
+              <td>{{transaction.amount}}</td>
+            </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
